@@ -9,13 +9,17 @@ namespace ProblemaRetangulo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("digite a largura do retângulo.");
-            double largura = double.Parse(Console.ReadLine());
-            Console.Write("digite a altura do retangulo.");
-            double altura = double.Parse(Console.ReadLine());
-            double area = altura * largura;
-            double p = 2 * (altura + largura);
-            double d = Math.Sqrt(largura * largura + altura + altura);
+            Retangulo r = new Retangulo();
+            Console.Write("digite a largura do retangulo:");
+            r.largura = double.Parse(Console.ReadLine());
+            Console.Write("digite a altura do retangulo:");
+            r.altura = double.Parse(Console.ReadLine());
+
+            double area = r.calcularArea();
+            double p = r.calcularPerimetro();
+            double d = r.calcularDiagonal();
+
+
             Console.WriteLine($"Área do retângulo: {area:F2}");
             Console.WriteLine($"Perímetro do retângulo: {p:F2}");
             Console.WriteLine($"Diagonal do retângulo: {d:F2}");

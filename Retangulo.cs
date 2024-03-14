@@ -24,8 +24,8 @@ namespace ProblemaRetangulo
 
         public double calcularDiagonal()
         {
-            double d = Math.Sqrt(altura * altura + largura * largura)
-                return d;
+            double d = Math.Sqrt(altura * altura + largura * largura);
+            return d;
         }
     }
 }
