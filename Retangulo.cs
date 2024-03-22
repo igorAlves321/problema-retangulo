@@ -37,5 +37,12 @@ namespace ProblemaRetangulo
             double d = Math.Sqrt(altura * altura + largura * largura);
             return d;
         }
+
+        public override string ToString()
+        {
+            return $"Retângulo: Altura = {altura}, Largura = {largura}, Cor = {cor}, " +
+                $"Área = {calcularArea():F2}, Perímetro = {calcularPerimetro():F2}, " +
+                $"Diagonal = {calcularDiagonal():F2}";
+        }
     }
 }

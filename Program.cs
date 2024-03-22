@@ -7,15 +7,13 @@ namespace ProblemaRetangulo
         static void Main(string[] args)
         {
             Retangulo retangulo = new Retangulo(10.0, 5.0);
-            Console.WriteLine("Área: " + retangulo.calcularArea());
-            Console.WriteLine("Perímetro: " + retangulo.calcularPerimetro());
-            Console.WriteLine("Diagonal: " + retangulo.calcularDiagonal());
+            Console.WriteLine(retangulo);
 
-            Retangulo r = new Retangulo(11.0, 5.0,"azul");
-            Console.WriteLine("segundo retângulo. Área: " + r.calcularArea());
-            Console.WriteLine("Perímetro: " + r.calcularPerimetro());
-            Console.WriteLine("Diagonal: " + r.calcularDiagonal());
-            Console.WriteLine("Cor: "+r.cor);
+            Retangulo r = new Retangulo(10.0, 5.0, "amarelo");
+            Console.WriteLine(r);
+
+
+
             Console.ReadKey();
         }
     }
