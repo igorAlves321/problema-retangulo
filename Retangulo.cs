@@ -6,6 +6,13 @@ namespace ProblemaRetangulo
     {
         public double altura;
         public double largura;
+        public string cor;
+
+
+        public Retangulo(double altura, double largura, string cor) : this(altura, largura)
+        {
+            this.cor = cor;
+        }
 
         public Retangulo(double altura, double largura)
         {
