@@ -1,14 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace ProblemaRetangulo
 {
     public class Retangulo
     {
-         public double altura;
+        public double altura;
         public double largura;
+
+        public Retangulo(double altura, double largura)
+        {
+            this.altura = altura;
+            this.largura = largura;
+        }
 
         public double calcularArea()
         {
