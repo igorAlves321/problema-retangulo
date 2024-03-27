@@ -4,45 +4,41 @@ namespace ProblemaRetangulo
 {
     public class Retangulo
     {
-        public double altura;
-        public double largura;
-        public string cor;
-
+        public double Altura { get; set; }
+        public double Largura { get; set; }
+        public string Cor { get; set; }
 
         public Retangulo(double altura, double largura, string cor) : this(altura, largura)
         {
-            this.cor = cor;
+            Cor = cor;
         }
 
         public Retangulo(double altura, double largura)
         {
-            this.altura = altura;
-            this.largura = largura;
+            Altura = altura;
+            Largura = largura;
         }
 
-        public double calcularArea()
+        public double CalcularArea()
         {
-            double area = altura * largura;
-            return area;
+            return Altura * Largura;
         }
 
-        public double calcularPerimetro()
+        public double CalcularPerimetro()
         {
-            double p = 2 * (altura + largura);
-            return p;
+            return 2 * (Altura + Largura);
         }
 
-        public double calcularDiagonal()
+        public double CalcularDiagonal()
         {
-            double d = Math.Sqrt(altura * altura + largura * largura);
-            return d;
+            return Math.Sqrt(Altura * Altura + Largura * Largura);
         }
 
         public override string ToString()
         {
-            return $"Retângulo: Altura = {altura}, Largura = {largura}, Cor = {cor}, " +
-                $"Área = {calcularArea():F2}, Perímetro = {calcularPerimetro():F2}, " +
-                $"Diagonal = {calcularDiagonal():F2}";
+            return $"Retângulo: Altura = {Altura}, Largura = {Largura}, Cor = {Cor}, " +
+                $"Área = {CalcularArea():F2}, Perímetro = {CalcularPerimetro():F2}, " +
+                $"Diagonal = {CalcularDiagonal():F2}";
         }
     }
 }
